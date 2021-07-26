@@ -16,15 +16,12 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
-import java.util.Map;
 
 
 public class Youtube {
 
     private World world;
     private List<WebElement> trendingVideos;
-
-    private List<Map<String, String>> extractedVideoData = new ArrayList<>();
 
     @Before
     public void before() {
@@ -127,13 +124,15 @@ public class Youtube {
     @And("the user logs of the {int} longest videos {string}, {string}, {string}")
     public void theUserTakesNoteOfTheLongestVideos(int arg0, String arg1, String arg2, String arg3) {
 
-        for (WebElement e : trendingVideos
+        System.out.println("Needs to implement step");
+
+        /*for (WebElement e : trendingVideos
         ) {
             for (String s : e.getText().split("\n")
             ) {
                 System.out.println(s);
             }
-        }
+        }*/
 
 
     }
@@ -141,13 +140,15 @@ public class Youtube {
     @And("the user logs of the {int} most viewed videos {string}, {string}, {string}")
     public void theUserTakesNoteOfTheMostViewedtVideos(int arg0, String arg1, String arg2, String arg3) {
 
-        for (WebElement e : trendingVideos
+        System.out.println("Needs to implement step");
+
+        /*for (WebElement e : trendingVideos
         ) {
             for (String s : e.getText().split("\n")
             ) {
                 System.out.println(s);
             }
-        }
+        }*/
 
 
     }
